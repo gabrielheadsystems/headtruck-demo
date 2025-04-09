@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Truck size={24} />
-              <span className="text-xl font-bold">SmartFreightMatch</span>
+              <span className="text-xl font-bold">Head Truck</span>
             </div>
             <p className="text-gray-300 mb-4">
               Conectando transportadores a cargas disponíveis. Economize tempo e dinheiro otimizando suas viagens de retorno.
@@ -110,14 +110,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={20} />
-                <span>contato@smartfreightmatch.com.br</span>
+                <span>contato@headtruck.com.br</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} SmartFreightMatch. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Head Truck. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <Truck size={28} className="text-brand-blue" />
-          <span className="text-xl font-bold text-brand-blue">SmartFreightMatch</span>
+          <span className="text-xl font-bold text-brand-blue">Head Truck</span>
         </Link>
         
         {/* Mobile menu button */}

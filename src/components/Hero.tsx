@@ -14,7 +14,7 @@ const Hero = () => {
               Otimize seu frete de retorno e aumente sua lucratividade
             </h1>
             <p className="text-xl text-gray-200 max-w-xl">
-              Conectamos transportadores a cargas disponíveis utilizando inteligência artificial para encontrar as melhores oportunidades no seu caminho de volta.
+              Head Truck conecta transportadores a cargas disponíveis utilizando inteligência artificial para encontrar as melhores oportunidades no seu caminho de volta.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/cadastrar">
