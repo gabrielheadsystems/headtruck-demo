@@ -54,10 +54,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				brand: {
-					blue: 'rgb(214, 30, 48)', // Changed from blue to red
-					orange: 'rgb(247, 247, 74)', // Changed from orange to yellow
-					light: '#F2F4F8',
-					gray: '#5E6472',
+					red: 'rgb(214, 30, 48)',
+					yellow: 'rgb(247, 247, 74)',
+					black: '#000000',
+					white: '#FFFFFF',
+					gray: '#222222',
+					lightgray: '#F2F2F2',
 				}
 			},
 			borderRadius: {
@@ -91,12 +93,21 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'slide-in': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out forwards'
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'slide-in': 'slide-in 0.8s ease-out forwards'
 			},
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
