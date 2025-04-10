@@ -54,8 +54,8 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				brand: {
-					blue: '#0A2463',
-					orange: '#F76C5E',
+					blue: 'rgb(214, 30, 48)', // Changed from blue to red
+					orange: 'rgb(247, 247, 74)', // Changed from orange to yellow
 					light: '#F2F4F8',
 					gray: '#5E6472',
 				}

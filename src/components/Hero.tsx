@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/cadastrar">
-                <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-6 text-lg w-full sm:w-auto">
+                <Button className="bg-brand-orange hover:bg-brand-orange/90 text-black font-semibold px-8 py-6 text-lg w-full sm:w-auto">
                   Começar Agora
                   <ArrowRight className="ml-2" size={18} />
                 </Button>
