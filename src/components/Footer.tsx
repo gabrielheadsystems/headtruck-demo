@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Truck, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,8 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Truck size={24} />
-              <span className="text-xl font-bold">Head Truck</span>
+              <img src="/logo.svg" alt="Head Truck" className="h-10" />
             </div>
             <p className="text-gray-300 mb-4">
               Conectando transportadores a cargas disponíveis. Economize tempo e dinheiro otimizando suas viagens de retorno.

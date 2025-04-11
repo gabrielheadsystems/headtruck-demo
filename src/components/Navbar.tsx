@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Truck } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -20,8 +20,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black py-3' : 'bg-transparent py-6'}`}>
       <div className="ferrari-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <Truck size={28} className="text-brand-red" />
-          <span className="text-xl font-bold text-white uppercase tracking-wider">Head Truck</span>
+          <img src="/logo.svg" alt="Head Truck" className="h-10" />
         </Link>
         
         {/* Mobile menu button */}
