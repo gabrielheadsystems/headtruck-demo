@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,9 +9,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.svg" alt="Head Truck" className="h-10" />
-            </div>
             <p className="text-gray-300 mb-4">
               Conectando transportadores a cargas disponíveis. Economize tempo e dinheiro otimizando suas viagens de retorno.
             </p>
@@ -25,8 +22,11 @@ const Footer = () => {
               <a href="https://linkedin.com" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter size={20} />
+              <a href="https://x.com" className="text-gray-300 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -101,11 +101,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin size={20} className="mt-1 flex-shrink-0" />
-                <span>Av. Paulista, 1000, São Paulo, SP, Brasil</span>
+                <span>R. João Alves Ferreira, 322 - Esmeraldas, Sete Lagoas, MG, Brasil</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={20} />
-                <span>(11) 3456-7890</span>
+                <span>(31) 9999-9999</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={20} />
