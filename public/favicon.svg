@@ -1,0 +1,26 @@
+
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="2" fill="black"/>
+  
+  <!-- Truck Body (Stylized) -->
+  <path d="M4 20H20V12H4V20Z" fill="#D61E30"/>
+  
+  <!-- Truck Cab -->
+  <path d="M20 20H26V14L24 12H20V20Z" fill="#D61E30"/>
+  
+  <!-- Wheels -->
+  <circle cx="8" cy="22" r="3" fill="#F7F74A"/>
+  <circle cx="22" cy="22" r="3" fill="#F7F74A"/>
+  
+  <!-- Truck Windows -->
+  <path d="M22 16H25V13L24 12H22V16Z" fill="white" fill-opacity="0.7"/>
+  
+  <!-- Stylized H letter for "Head" -->
+  <path d="M8 17V15H10V16H12V15H14V17H8Z" fill="white"/>
+  
+  <!-- Speed lines -->
+  <path d="M28 14L30 14" stroke="#F7F74A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M27 17L30 17" stroke="#F7F74A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M28 20L30 20" stroke="#F7F74A" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
