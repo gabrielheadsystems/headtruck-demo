@@ -22,6 +22,21 @@ const Navbar = () => {
     setIsMenuOpen(false);
   }, [location]);
 
+  // Função para rolar suavemente para uma seção na mesma página
+  const scrollToSection = (sectionId: string) => {
+    setIsMenuOpen(false);
+    
+    if (location.pathname !== "/") {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black py-3' : 'bg-transparent py-6'}`}>
       <div className="ferrari-container flex justify-between items-center">
@@ -46,15 +61,24 @@ const Navbar = () => {
           <Link to="/" className="ferrari-nav-link text-white">
             Início
           </Link>
-          <Link to="/como-funciona" className="ferrari-nav-link text-white">
+          <button 
+            onClick={() => scrollToSection("como-funciona")} 
+            className="ferrari-nav-link text-white"
+          >
             Como Funciona
-          </Link>
-          <Link to="/motoristas" className="ferrari-nav-link text-white">
+          </button>
+          <button 
+            onClick={() => scrollToSection("para-motoristas")} 
+            className="ferrari-nav-link text-white"
+          >
             Para Motoristas
-          </Link>
-          <Link to="/embarcadores" className="ferrari-nav-link text-white">
+          </button>
+          <button 
+            onClick={() => scrollToSection("para-embarcadores")} 
+            className="ferrari-nav-link text-white"
+          >
             Para Embarcadores
-          </Link>
+          </button>
           <Link to="/contato" className="ferrari-nav-link text-white">
             Contato
           </Link>
@@ -84,27 +108,24 @@ const Navbar = () => {
               >
                 Início
               </Link>
-              <Link 
-                to="/como-funciona" 
-                className="py-3 text-white ferrari-nav-link"
-                onClick={() => setIsMenuOpen(false)}
+              <button 
+                onClick={() => scrollToSection("como-funciona")} 
+                className="py-3 text-white ferrari-nav-link text-left"
               >
                 Como Funciona
-              </Link>
-              <Link 
-                to="/motoristas" 
-                className="py-3 text-white ferrari-nav-link"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("para-motoristas")} 
+                className="py-3 text-white ferrari-nav-link text-left"
               >
                 Para Motoristas
-              </Link>
-              <Link 
-                to="/embarcadores" 
-                className="py-3 text-white ferrari-nav-link"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection("para-embarcadores")} 
+                className="py-3 text-white ferrari-nav-link text-left"
               >
                 Para Embarcadores
-              </Link>
+              </button>
               <Link 
                 to="/contato" 
                 className="py-3 text-white ferrari-nav-link"

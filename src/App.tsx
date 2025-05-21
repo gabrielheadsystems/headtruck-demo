@@ -7,12 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
-import HowItWorksPage from "./pages/HowItWorksPage";
-import DriversPage from "./pages/DriversPage";
-import ShippersPage from "./pages/ShippersPage";
-import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
@@ -26,9 +23,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/como-funciona" element={<HowItWorksPage />} />
-            <Route path="/motoristas" element={<DriversPage />} />
-            <Route path="/embarcadores" element={<ShippersPage />} />
             <Route path="/contato" element={<ContactPage />} />
             <Route path="/entrar" element={<LoginPage />} />
             <Route path="/cadastrar" element={<RegisterPage />} />

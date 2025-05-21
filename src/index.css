@@ -42,6 +42,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-poppins;
   }
@@ -77,7 +81,7 @@
   }
 
   .ferrari-nav-link {
-    @apply uppercase text-sm font-medium tracking-wider hover:text-brand-red transition-colors;
+    @apply uppercase text-sm font-medium tracking-wider hover:text-brand-red transition-colors cursor-pointer;
   }
 
   .feature-title {
@@ -106,4 +110,14 @@ p {
 /* Enhanced form elements */
 input, select, textarea {
   @apply text-[#333333] font-medium;
+}
+
+/* Animation for smooth scroll */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Improved card text contrast */
+.card p {
+  @apply text-black font-medium;
 }

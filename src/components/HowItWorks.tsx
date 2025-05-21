@@ -1,11 +1,21 @@
+
 import { CheckCircle2, Truck, Package, Map, Clock, Zap, ArrowRight, Shield, PlusCircle, ChevronDown, ChevronRight, CalendarRange, DollarSign, Smartphone, Award } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useEffect } from "react";
 
 const HowItWorks = () => {
+  // Adicionando efeito de rolagem suave para toda a página
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
+
   return (
-    <section className="py-16 bg-brand-light">
+    <section id="como-funciona" className="py-16 bg-brand-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Como Funciona</h2>
@@ -147,11 +157,11 @@ const HowItWorks = () => {
           </TabsContent>
           
           {/* Para Motoristas */}
-          <TabsContent value="drivers" className="space-y-12">
+          <TabsContent value="drivers" className="space-y-12" id="para-motoristas">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                  src="https://images.unsplash.com/photo-1580974928064-f0aeef70895a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
                   alt="Motorista usando aplicativo de fretes"
                   className="rounded-lg shadow-lg mx-auto object-cover h-[400px]"
                 />
@@ -254,13 +264,6 @@ const HowItWorks = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-              
-              <div className="mt-8 flex justify-center">
-                <a href="/motoristas" className="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red/90 text-white font-medium px-6 py-3 rounded-lg transition-colors">
-                  Saiba mais sobre nossa solução para motoristas
-                  <ArrowRight size={18} />
-                </a>
-              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -269,10 +272,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <Award className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Classificação de Motoristas</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Classificação de Motoristas</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Construa sua reputação, receba avaliações positivas e ganhe prioridade 
                     em fretes de maior valor. Motoristas bem avaliados recebem badges 
                     especiais visíveis para embarcadores.
@@ -285,10 +288,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <CalendarRange className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Planejamento Antecipado</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Planejamento Antecipado</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Cadastre suas rotas com antecedência e receba ofertas de fretes enquanto 
                     ainda está em viagem. Otimize seu tempo e nunca fique sem carga.
                   </p>
@@ -300,10 +303,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <Smartphone className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Aplicativo Móvel</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Aplicativo Móvel</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Gerencie fretes, receba notificações de novas cargas, confirme coletas e 
                     entregas, tudo pelo nosso aplicativo móvel disponível para Android e iOS.
                   </p>
@@ -313,7 +316,7 @@ const HowItWorks = () => {
           </TabsContent>
           
           {/* Para Embarcadores */}
-          <TabsContent value="shippers" className="space-y-12">
+          <TabsContent value="shippers" className="space-y-12" id="para-embarcadores">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
@@ -420,13 +423,6 @@ const HowItWorks = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-              
-              <div className="mt-8 flex justify-center">
-                <a href="/embarcadores" className="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red/90 text-white font-medium px-6 py-3 rounded-lg transition-colors">
-                  Saiba mais sobre nossa solução para embarcadores
-                  <ArrowRight size={18} />
-                </a>
-              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -435,10 +431,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <Shield className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Segurança e Confiabilidade</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Segurança e Confiabilidade</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Transportadores verificados, seguro de carga opcional e sistema de avaliações 
                     garantem a qualidade do serviço e a proteção de suas mercadorias.
                   </p>
@@ -450,10 +446,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <DollarSign className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Economia Significativa</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Economia Significativa</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Reduza custos de transporte aproveitando caminhões que já estariam na rota. 
                     Compare propostas e escolha a melhor combinação de preço e serviço.
                   </p>
@@ -465,10 +461,10 @@ const HowItWorks = () => {
                   <div className="bg-brand-blue/10 p-3 rounded-full w-fit mb-2">
                     <Clock className="text-brand-red" size={24} />
                   </div>
-                  <CardTitle className="text-xl text-brand-blue">Agilidade Operacional</CardTitle>
+                  <CardTitle className="text-xl font-bold text-brand-blue">Agilidade Operacional</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-brand-gray">
+                  <p className="text-black font-medium">
                     Encontre transportadores disponíveis em minutos, sem ligações telefônicas ou 
                     longas negociações. Todo processo é digital, rápido e eficiente.
                   </p>
