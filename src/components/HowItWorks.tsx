@@ -19,7 +19,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Como Funciona</h2>
-          <p className="text-lg text-brand-gray max-w-3xl mx-auto font-medium">
+          <p className="text-lg text-black max-w-3xl mx-auto font-medium">
             Nossa plataforma conecta transportadores e embarcadores de forma inteligente, 
             otimizando rotas e maximizando lucros para todos.
           </p>
@@ -52,7 +52,7 @@ const HowItWorks = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-brand-blue">Plataforma Completa de Logística</h3>
-                <p className="text-lg text-brand-gray">
+                <p className="text-lg text-black font-medium">
                   A Head Truck oferece uma solução completa para o setor de transportes,
                   conectando motoristas e embarcadores em uma plataforma única, segura e eficiente.
                 </p>
@@ -64,7 +64,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Tecnologia Avançada</h4>
-                      <p className="text-brand-gray">Nossa plataforma usa IA para otimizar rotas e encontrar as melhores combinações de cargas.</p>
+                      <p className="text-black font-medium">Nossa plataforma usa IA para otimizar rotas e encontrar as melhores combinações de cargas.</p>
                     </div>
                   </div>
                   
@@ -74,7 +74,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Economia Real</h4>
-                      <p className="text-brand-gray">Motoristas reduzem quilômetros rodados vazios e embarcadores economizam até 30% em fretes.</p>
+                      <p className="text-black font-medium">Motoristas reduzem quilômetros rodados vazios e embarcadores economizam até 30% em fretes.</p>
                     </div>
                   </div>
                   
@@ -84,7 +84,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Sustentabilidade</h4>
-                      <p className="text-brand-gray">Nossa solução reduz a emissão de poluentes ao evitar viagens com caminhões vazios.</p>
+                      <p className="text-black font-medium">Nossa solução reduz a emissão de poluentes ao evitar viagens com caminhões vazios.</p>
                     </div>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const HowItWorks = () => {
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
               <div className="text-center mb-10">
                 <h3 className="text-2xl md:text-3xl font-bold text-brand-blue mb-4">Principais Benefícios</h3>
-                <p className="text-brand-gray max-w-2xl mx-auto">Nossa plataforma traz vantagens tanto para transportadores quanto para embarcadores.</p>
+                <p className="text-black font-medium max-w-2xl mx-auto">Nossa plataforma traz vantagens tanto para transportadores quanto para embarcadores.</p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -110,7 +110,7 @@ const HowItWorks = () => {
                     <Truck className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Redução de Custos</h4>
-                  <p className="text-brand-gray font-medium">Elimine viagens vazias e aumente seu faturamento com fretes de retorno.</p>
+                  <p className="text-black font-medium">Elimine viagens vazias e aumente seu faturamento com fretes de retorno.</p>
                 </div>
                 
                 <div className="bg-brand-light rounded-lg p-6 card-hover border-t-4 border-brand-red">
@@ -118,7 +118,7 @@ const HowItWorks = () => {
                     <Package className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Preços Competitivos</h4>
-                  <p className="text-brand-gray font-medium">Embarcadores conseguem melhores preços para transportes estratégicos.</p>
+                  <p className="text-black font-medium">Embarcadores conseguem melhores preços para transportes estratégicos.</p>
                 </div>
                 
                 <div className="bg-brand-light rounded-lg p-6 card-hover border-t-4 border-brand-red">
@@ -126,7 +126,7 @@ const HowItWorks = () => {
                     <Map className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Otimização de Rotas</h4>
-                  <p className="text-brand-gray font-medium">Algoritmos inteligentes para encontrar as melhores combinações de carga e rota.</p>
+                  <p className="text-black font-medium">Algoritmos inteligentes para encontrar as melhores combinações de carga e rota.</p>
                 </div>
                 
                 <div className="bg-brand-light rounded-lg p-6 card-hover border-t-4 border-brand-red">
@@ -134,7 +134,7 @@ const HowItWorks = () => {
                     <Clock className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Economia de Tempo</h4>
-                  <p className="text-brand-gray font-medium">Processo simplificado e rápido para encontrar cargas ou transportadores.</p>
+                  <p className="text-black font-medium">Processo simplificado e rápido para encontrar cargas ou transportadores.</p>
                 </div>
                 
                 <div className="bg-brand-light rounded-lg p-6 card-hover border-t-4 border-brand-red">
@@ -142,7 +142,7 @@ const HowItWorks = () => {
                     <Zap className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Sustentabilidade</h4>
-                  <p className="text-brand-gray font-medium">Reduza a emissão de poluentes ao evitar viagens com caminhões vazios.</p>
+                  <p className="text-black font-medium">Reduza a emissão de poluentes ao evitar viagens com caminhões vazios.</p>
                 </div>
                 
                 <div className="bg-brand-light rounded-lg p-6 card-hover border-t-4 border-brand-red">
@@ -150,7 +150,7 @@ const HowItWorks = () => {
                     <Shield className="text-brand-red" size={24} />
                   </div>
                   <h4 className="text-xl font-bold mb-2 text-brand-blue">Segurança</h4>
-                  <p className="text-brand-gray font-medium">Transportadores e embarcadores verificados e avaliados pela comunidade.</p>
+                  <p className="text-black font-medium">Transportadores e embarcadores verificados e avaliados pela comunidade.</p>
                 </div>
               </div>
             </div>
@@ -161,14 +161,14 @@ const HowItWorks = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1580974928064-f0aeef70895a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-                  alt="Motorista usando aplicativo de fretes"
+                  src="https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                  alt="Camelos representando transporte de cargas"
                   className="rounded-lg shadow-lg mx-auto object-cover h-[400px]"
                 />
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                 <h3 className="text-2xl font-bold text-brand-blue">Para Transportadores</h3>
-                <p className="text-lg text-brand-gray">
+                <p className="text-lg text-black font-medium">
                   Se você é motorista autônomo ou transportadora, a Head Truck permite que você 
                   maximize seus lucros eliminando a ociosidade do seu veículo e encontrando cargas 
                   para suas rotas de retorno.
@@ -181,7 +181,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Cadastre-se gratuitamente</h4>
-                      <p className="text-brand-gray">Crie seu perfil em minutos, adicione seus veículos e esteja pronto para receber cargas.</p>
+                      <p className="text-black font-medium">Crie seu perfil em minutos, adicione seus veículos e esteja pronto para receber cargas.</p>
                     </div>
                   </div>
                   
@@ -191,7 +191,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Informe sua rota</h4>
-                      <p className="text-brand-gray">Cadastre sua rota de ida e retorno, com datas e capacidade disponível.</p>
+                      <p className="text-black font-medium">Cadastre sua rota de ida e retorno, com datas e capacidade disponível.</p>
                     </div>
                   </div>
                   
@@ -201,7 +201,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Receba ofertas</h4>
-                      <p className="text-brand-gray">Nossa IA fará o match com cargas compatíveis com sua rota e tipo de veículo.</p>
+                      <p className="text-black font-medium">Nossa IA fará o match com cargas compatíveis com sua rota e tipo de veículo.</p>
                     </div>
                   </div>
                   
@@ -211,7 +211,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Negocie e aceite</h4>
-                      <p className="text-brand-gray">Analise as propostas, negocie os valores e confirme os fretes que mais te interessam.</p>
+                      <p className="text-black font-medium">Analise as propostas, negocie os valores e confirme os fretes que mais te interessam.</p>
                     </div>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Quanto custa usar a plataforma?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     O cadastro e o acesso à plataforma são gratuitos para motoristas e transportadoras. 
                     Cobramos apenas uma pequena taxa sobre os fretes efetivamente realizados através da plataforma.
                   </AccordionContent>
@@ -236,7 +236,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Como recebo o pagamento pelos fretes?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Após a confirmação da entrega, o pagamento é processado em até 3 dias úteis 
                     diretamente na sua conta bancária cadastrada ou via PIX.
                   </AccordionContent>
@@ -246,7 +246,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Que tipo de veículos posso cadastrar?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Nossa plataforma aceita todos os tipos de veículos de carga, desde pequenos 
                     utilitários até grandes carretas e bi-trens. Você pode cadastrar quantos 
                     veículos desejar sob o mesmo perfil.
@@ -257,7 +257,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Preciso ter dispositivo para rastreamento?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Para cargas de maior valor, embarcadores podem exigir rastreamento. 
                     Você pode usar nosso aplicativo móvel que serve como rastreador ou 
                     integrar seu sistema atual de rastreamento com nossa plataforma.
@@ -327,7 +327,7 @@ const HowItWorks = () => {
               </div>
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-brand-blue">Para Embarcadores</h3>
-                <p className="text-lg text-brand-gray">
+                <p className="text-lg text-black font-medium">
                   Empresas que precisam transportar cargas encontram na Head Truck uma solução 
                   completa para reduzir custos logísticos e aumentar a eficiência no transporte.
                 </p>
@@ -339,7 +339,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Cadastre sua empresa</h4>
-                      <p className="text-brand-gray">Processo simples, rápido e com validação de segurança para garantir a confiabilidade da plataforma.</p>
+                      <p className="text-black font-medium">Processo simples, rápido e com validação de segurança para garantir a confiabilidade da plataforma.</p>
                     </div>
                   </div>
                   
@@ -349,7 +349,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Anuncie suas cargas</h4>
-                      <p className="text-brand-gray">Publique detalhes da carga, rota, prazos e receba propostas de transportadores.</p>
+                      <p className="text-black font-medium">Publique detalhes da carga, rota, prazos e receba propostas de transportadores.</p>
                     </div>
                   </div>
                   
@@ -359,7 +359,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Escolha os melhores transportadores</h4>
-                      <p className="text-brand-gray">Veja avaliações, histórico e escolha transportadores verificados e confiáveis.</p>
+                      <p className="text-black font-medium">Veja avaliações, histórico e escolha transportadores verificados e confiáveis.</p>
                     </div>
                   </div>
                   
@@ -369,7 +369,7 @@ const HowItWorks = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-brand-blue">Acompanhe em tempo real</h4>
-                      <p className="text-brand-gray">Monitore o status da entrega e a localização da sua carga durante todo o percurso.</p>
+                      <p className="text-black font-medium">Monitore o status da entrega e a localização da sua carga durante todo o percurso.</p>
                     </div>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Como garantem a segurança das cargas?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Todos os transportadores passam por verificação documental rigorosa. 
                     Além disso, oferecemos seguro de carga opcional e rastreamento em tempo real 
                     para maior tranquilidade no transporte.
@@ -395,7 +395,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Qual a economia média nos fretes?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Nossos clientes reportam economia média de 15% a 30% nos custos de frete, 
                     principalmente em rotas de retorno onde os transportadores já estariam em 
                     deslocamento.
@@ -406,7 +406,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Posso integrar com meu sistema de gestão?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Sim, oferecemos APIs de integração para os principais sistemas ERP e TMS do 
                     mercado. Nossa equipe técnica oferece suporte completo para a integração.
                   </AccordionContent>
@@ -416,7 +416,7 @@ const HowItWorks = () => {
                   <AccordionTrigger className="text-lg font-semibold text-brand-blue">
                     Como funciona o pagamento aos transportadores?
                   </AccordionTrigger>
-                  <AccordionContent className="text-brand-gray">
+                  <AccordionContent className="text-black font-medium">
                     Os valores são previamente acordados e após a confirmação de entrega, 
                     processamos o pagamento em até 3 dias úteis. Para empresas, oferecemos 
                     planos com faturamento mensal e prazos de pagamento estendidos.
