@@ -58,8 +58,10 @@ export default {
 					yellow: 'rgb(247, 247, 74)',
 					black: '#000000',
 					white: '#FFFFFF',
-					gray: '#222222',
+					gray: '#333333', // Darker for better contrast
 					lightgray: '#F2F2F2',
+					blue: '#0B3C5D', // Added a darker blue for better contrast
+					light: '#F8F9FA', // Light background color
 				}
 			},
 			borderRadius: {

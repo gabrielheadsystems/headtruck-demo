@@ -57,11 +57,11 @@
   }
   
   .btn-primary {
-    @apply bg-brand-red text-white hover:bg-brand-red/90 transition-colors;
+    @apply bg-brand-red text-white hover:bg-brand-red/90 transition-colors font-medium;
   }
   
   .btn-secondary {
-    @apply bg-brand-yellow text-black hover:bg-brand-yellow/90 transition-colors;
+    @apply bg-brand-yellow text-black hover:bg-brand-yellow/90 transition-colors font-medium;
   }
 
   .ferrari-container {
@@ -69,11 +69,11 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold uppercase tracking-wider;
+    @apply text-3xl md:text-4xl font-bold uppercase tracking-wider text-brand-blue;
   }
 
   .ferrari-card {
-    @apply bg-brand-gray text-white overflow-hidden;
+    @apply bg-brand-gray text-white overflow-hidden shadow-md;
   }
 
   .ferrari-nav-link {
@@ -81,6 +81,29 @@
   }
 
   .feature-title {
-    @apply text-xl font-bold uppercase tracking-wider;
+    @apply text-xl font-bold uppercase tracking-wider text-brand-blue;
   }
+  
+  .text-brand-gray {
+    @apply text-[#333333]; 
+  }
+}
+
+/* Enhanced focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-brand-red;
+}
+
+/* Improved text contrast */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-brand-blue font-bold;
+}
+
+p {
+  @apply text-[#333333];
+}
+
+/* Enhanced form elements */
+input, select, textarea {
+  @apply text-[#333333] font-medium;
 }
