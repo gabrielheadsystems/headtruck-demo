@@ -1,4 +1,3 @@
-
 import { CheckCircle2, Truck, Package, Map, Clock, Zap, ArrowRight, Shield, PlusCircle, ChevronDown, ChevronRight, CalendarRange, DollarSign, Smartphone, Award } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -152,7 +151,7 @@ const HowItWorks = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <img 
-                  src="https://images.unsplash.com/photo-1591375372061-47043053dc5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                  src="https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
                   alt="Motorista usando aplicativo de fretes"
                   className="rounded-lg shadow-lg mx-auto object-cover h-[400px]"
                 />
